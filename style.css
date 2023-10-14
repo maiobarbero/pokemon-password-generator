@@ -1,0 +1,138 @@
+/* Reset some default styles */
+html,
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #DFF0D8;
+  /* Green color for a grassy feel */
+}
+
+#main {
+  height: 100vh;
+  background-image: linear-gradient(45deg, transparent 25%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05));
+  background-size: 20px 20px;
+  text-align: center;
+}
+
+span {
+  font-size: 1.2em;
+  color: #263238;
+  /* White text for better contrast */
+}
+
+#password {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #EF5350;
+}
+
+select {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+#button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  width: 160px;
+  background-color: #2C7FED;
+  color: #ffffff;
+  /* White text for better contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow for Pokemon effect */
+  transition: background-color 0.3s ease;
+}
+
+#button:hover {
+  background-color: #5191e6;
+}
+
+#button:disabled {
+  background-color: #ccc;
+  /* Light gray color when disabled */
+  cursor: not-allowed;
+}
+
+.loader {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#button[disabled] .loader {
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: none;
+  /* Remove animation when disabled */
+}
+
+#select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.note {
+  font-size: 0.7rem;
+  margin-top: 0.7rem;
+  opacity: .7;
+}
+
+#copy-icon {
+  cursor: pointer;
+  display: none;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.link{
+  position: absolute;
+  bottom: 2rem;
+  font-size: 0.5rem;
+}
+.link a{
+  color: inherit;
+}

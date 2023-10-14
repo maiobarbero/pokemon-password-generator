@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Pokemon Password Generator</title>
+</head>
+
+<body>
+  <main id="main">
+    <div class="container">
+      <span>Pokemon password generator</span>
+      <div id="password-container">
+        <span id="password">Click on the botton below</span>
+        <div id="copy-icon" onclick="copyPasswordToClipboard()"><img src="/images/icons8-pokeball-48.png"
+            alt="pokeball click to copy">
+          <span class="note">Click to catch the password</span>
+        </div>
+      </div>
+      <div id="select">
+        <select name="generation" id="generation">
+          <option value="1017" disabled selected>Choose a generation</option>
+          <option value="151">Kanto</option>
+          <option value="251">Johto</option>
+          <option value="386">Hoenn</option>
+          <option value="493">Sinnoh</option>
+          <option value="649">Unova</option>
+          <option value="721">Kalos</option>
+          <option value="809">Alola</option>
+          <option value="905">Galar</option>
+          <option value="1017">Paldes</option>
+        </select>
+        <span class="note">Each generation includes the previous one</span>
+      </div>
+      <button type="submit" id="button">Generate a new password</button>
+      <span class="note link">Made for fun by <a href="https://maiobarbero.dev" target="_blank">Matteo "Maio" Barbero</a></span>
+    </div>
+  </main>
+</body>
+<script src="app.js"></script>
+
+</html>
