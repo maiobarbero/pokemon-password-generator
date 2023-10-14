@@ -88,13 +88,6 @@ select {
   }
 }
 
-#button[disabled] .loader {
-  border: 3px solid #fff;
-  border-top: 3px solid transparent;
-  border-radius: 50%;
-  animation: none;
-  /* Remove animation when disabled */
-}
 
 #select {
   display: flex;
