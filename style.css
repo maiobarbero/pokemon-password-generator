@@ -25,11 +25,15 @@ span {
   color: #263238;
   /* White text for better contrast */
 }
-
+#password-container{
+  max-width: 100%;
+}
 #password {
   font-size: 1.5em;
   font-weight: bold;
   color: #EF5350;
+  padding: 1rem;
+  word-wrap: break-word;
 }
 
 select {
@@ -121,11 +125,12 @@ select {
   flex-direction: column;
   gap: 3rem;
 }
-.link{
-  position: absolute;
-  bottom: 2rem;
+
+.link {
+  margin-bottom: 10rem;
   font-size: 0.5rem;
 }
-.link a{
+
+.link a {
   color: inherit;
 }
