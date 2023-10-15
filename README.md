@@ -7,5 +7,5 @@ This password generator is inspired by [XKCD](https://xkcd.com/936/)
 Just visit [pokepassword.com](https://www.pokepassword.com/) and click the generate button. You will have an easy for human, hard for machine password.
 
 ## Credits:
-Thanks to [PokeApi](https://pokeapi.co/) for the great work on building the API
+Thanks to [PokeApi](https://pokeapi.co/) for the great work on building the API.</br>
 Pokémon and Pokémon character names are trademarks of Nintendo.
